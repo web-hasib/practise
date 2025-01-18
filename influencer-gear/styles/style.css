@@ -97,6 +97,55 @@
   }
 
 
+  /* popular collection */
+  .collection{
+    width: 90%;
+   text-align: center;
+   
+   
+   
+  }
+  .collection > .title{
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+  }
+  .collection-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    
+  }
+  .collection-container .product{
+    /* border: 2px solid red; */
+    background-color: rgba(255, 255, 255, 0.808);
+    box-shadow: 3px 3px 30px rgba(179, 171, 171, 0.233) ;
+    height: 510px;
+    width: 319px;
+    margin: 20px;
+    padding: 20px 17px;
+    border-radius: 10px;
+    text-align: start;
+  }
+  .collection-container .product img{
+    /* border: 5px solid red; */
+    width: 100%;
+   
+  }
+  .collection-container .product h3{
+    font-size: 1.75rem;
+    font-weight: 500;
+    
+    
+  }
+  .collection-container .product .price{
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  .collection-container .product .desk{
+    color: rgba(0, 0, 0, 0.486);
+  }
+
+
 
 
 

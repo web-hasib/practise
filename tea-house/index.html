@@ -35,7 +35,7 @@
     <!-- main content  -->
     <main class="max-w-screen-xl mx-auto px-16 lg:px-28">
       <!-- header section  -->
-      <header class="flex pt-10 mb-20">
+      <header class="lg:flex pt-10 mb-20">
         <!-- text content  -->
         <div>
           <h1 class="text-5xl md:text-7xl">
@@ -57,27 +57,74 @@
           </button>
         </div>
         <!-- Photo content  -->
-         <div class="relative">
-           <!-- image  -->
-           <div>
-             <img class="w-full" src="images/banner.png" alt="" />
-           </div>
-           <!-- card  -->
-            <div class="flex items-center bg-white shadow-lg px-2 py-2 md:px-10 lg:py-4 rounded-lg absolute top-28 md:top-80 md:left-32 lg:left-28">
- 
-              <!-- icon  -->
-              <div>
-                <div><i class="fa-solid fa-star text-amber-500"></i></div>
-              </div>
-              <!-- text  -->
-              <div class="ml-2">
-                <h2 class="lg:text-2xl font-bold">5.00</h2>
-                <p class="text-gray-500">Trust Pilot Ratings</p>
-              </div>
+        <div class="relative">
+          <!-- image  -->
+          <div>
+            <img class="w-full" src="images/banner.png" alt="" />
+          </div>
+          <!-- card  -->
+          <div
+            class="flex items-center bg-white shadow-lg px-2 py-2 md:px-10 lg:py-4 rounded-lg absolute top-28 md:top-80 md:left-32 lg:left-28"
+          >
+            <!-- icon  -->
+            <div>
+              <div><i class="fa-solid fa-star text-amber-500"></i></div>
             </div>
-         </div>
-        
+            <!-- text  -->
+            <div class="ml-2">
+              <h2 class="lg:text-2xl font-bold">5.00</h2>
+              <p class="text-gray-500">Trust Pilot Ratings</p>
+            </div>
+          </div>
+        </div>
       </header>
+      <!-- featured product section  -->
+      <section class="py-8 lg:py-24">
+        <!-- title  -->
+        <div class="text-center mb-8">
+          <h3 class="text-3xl mb:text-4xl font-bold mb-5">
+            Our Featured Products
+          </h3>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable.
+          </p>
+        </div>
+        <!-- product grid card -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+          <!-- card  -->
+          <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
+            <img class="mx-auto pt-4" src="images/tea-1.png" alt="" />
+            <div class="p-4">
+              <h2 class="font-bold text-xl">milk tea</h2>
+              <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+          </div>
+          <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
+            <img class="mx-auto pt-4" src="images/tea-2.png" alt="" />
+            <div class="p-4">
+              <h2 class="font-bold text-xl">Black tea</h2>
+              <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+          </div>
+          <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
+            <img class="mx-auto pt-4" src="images/tea-3.png" alt="" />
+            <div class="p-4">
+              <h2 class="font-bold text-xl">Lemon tea</h2>
+              <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+          </div>
+          <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
+            <img class="mx-auto pt-4" src="images/tea-4.png" alt="" />
+            <div class="p-4">
+              <h2 class="font-bold text-xl">Green tea</h2>
+              <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>

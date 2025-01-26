@@ -26,12 +26,15 @@
             colors: {
               clifford: "#da373d",
             },
+            fontFamily:{
+              manrope:["Manrope", "serif"],
+            },
           },
         },
       };
     </script>
   </head>
-  <body>
+  <body class="font-manrope">
     <!-- main content  -->
     <main class="max-w-screen-xl mx-auto px-16 lg:px-28">
       <!-- header section  -->
@@ -345,8 +348,14 @@
             </h3>
             <div class="flex flex-col space-y-2">
               <div>
-                <input type="text" placeholder="Email Address" class="bg-transparent border-b-2 border-black w-4/6 ">
-                <i class="fa-solid fa-chevron-right w-7 h-7 bg-orange-600 inline-flex rounded-full text-white justify-center items-center"></i>
+                <input
+                  type="text"
+                  placeholder="Email Address"
+                  class="bg-transparent border-b-2 border-black w-4/6"
+                />
+                <i
+                  class="fa-solid fa-chevron-right w-7 h-7 bg-orange-600 inline-flex rounded-full text-white justify-center items-center"
+                ></i>
                 <div class="flex justify-between w-2/5 mb-2 mt-8">
                   <i class="fa-brands fa-facebook"></i>
                   <i class="fa-brands fa-square-instagram"></i>
@@ -358,9 +367,11 @@
         </div>
 
         <!-- copyright  -->
-         <div class="text-center pt-4 mt-4">
-          <p class="text-sm text-gray-600">© 2027 UIDesign.to - All rights reserved.</p>
-         </div>
+        <div class="text-center pt-4 mt-4">
+          <p class="text-sm text-gray-600">
+            © 2027 UIDesign.to - All rights reserved.
+          </p>
+        </div>
       </div>
     </footer>
   </body>

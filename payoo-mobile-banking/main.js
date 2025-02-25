@@ -8,7 +8,7 @@ document
     const account= document.getElementById('account-num').value;
     // const convertedAccount= parseInt(account);
     const amount = document.getElementById("amount").value;
-    console.log(amount);
+    // console.log(amount);
     const convertedAmount = parseFloat(amount);
     //    alert(convertedAmount);
     const pin = document.getElementById("account-pin").value;
@@ -17,6 +17,11 @@ document
     const convertedMainBalance = parseFloat(mainBalance);
     // alert( typeof convertedMainBalance);
     // alert(convertedPin);
+    if(convertedAmount<0){
+      alert("Are vai akta positive number den ");
+      return
+    }
+
     if (convertedPin === 1234) {
       // alert('ok');
       const sum = convertedMainBalance + convertedAmount;
@@ -44,6 +49,12 @@ document.getElementById("cash-out").addEventListener("click", function (event) {
   const convertedAmount = parseFloat(amount);
   const mainBalance = document.getElementById("main-balance").innerText;
   const convertedMainBalance = parseFloat(mainBalance);
+
+  if(convertedAmount>convertedMainBalance){
+    alert("Apnar kache to ato taka e nai, Apni to miya dekha jay onek kharap lok ");
+    return
+  }
+
   if (convertedPin === 1234) {
     const sum = convertedMainBalance - convertedAmount;
     document.getElementById("main-balance").innerText = sum;
